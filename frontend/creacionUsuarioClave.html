@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Crea tu usuario</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="icon" type="favicon/x-icon" href="resources/img/logo.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+    <!-- Cargando Sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        
+    
+</head>
+
+    <!-- Inicio NavBar -->
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark p-md-3">
+            <div class="container navContainer">
+                <a href="#" class="navbar-brand" style="margin-bottom: -30px; margin-top: -15px;">
+                    <div class="mb-3 mx-auto" style="display: flex; align-items: center; justify-content: center;
+                    background-color: white; width: 75px; 
+                    height: 75px; border-radius: 50%; "
+                    id="nav-bar-div">
+                        <img src="resources/img/logo.png" alt="logo" width="60" height="69" 
+                        style="margin-top: 2px;">
+                    </div>
+                </a>
+                <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-level="Toggle navigation"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mx-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="comprobacion.html" class="nav-link">Regresar</a>
+                        </li>
+                
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="salir()" style="cursor: pointer;">Salir</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Fin NavBar -->
+
+<body class="container-fluid" id="cuerpo2">
+    <div id="usuarioclave">
+    <div class="row">
+        <h1 class="text-center">Crea tu usuario</h1>
+    </div>
+
+    <form class="row mx-auto" id="form-usuario"">
+
+        <div class="col-md-12">
+            <br>
+            <label for="usuario" class="form-label">Usuario</label>
+            <input type="text" class="form-control" id="usuario" name="usuario" required minlength="5" maxlength="30">
+            <!-- <div id="nombresHelp" class="form-text">Ingresa los nombres del cliente</div> 
+            pattern="[A-Za-z ]+" title="Solamente se pueden ingresar letras"-->
+        </div>
+    
+        <div class="col-md-12">
+            <br>
+            <label for="clave" class="form-label">Clave:</label>
+            <input type="password" class="form-control" id="clave" name="clave" required placeholder="Ingrese la clave"
+                title="Ingrese una clave que tenga Mínimo 8 caracteres, al menos una letra, un número y un carácter especial"
+                pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^\w\s])[A-Za-z\d\W]{8,}$"    ></br>
+        </div>
+    
+        <div class="col-md-12">
+            <label for="clave" class="form-label">Confirma tu Clave:</label>
+            <input type="password" class="form-control" id="confirmacionClave" name="confirmacionClave" required
+                placeholder="Ingrese nuevamente la clave" 
+                pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^\w\s])[A-Za-z\d\W]{8,}$" > <br>
+
+        </div>
+        <span class="msg-error error" id="reca"></span>
+        <div id="recaptcha" class="g-recaptcha" data-sitekey="6Lf1IawkAAAAAMa5T958QEJDdWUQOf1QObACzCBx"></div>
+
+        <button type="submit" class="btn btn-success mx-auto" id="agregar-login">Continuar</button></br>
+
+    </form>
+</div>
+    <!-- <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <script type="text/javascript">
+        $('#btn-validate').click(function () {
+            var $captcha = $('#recaptcha'),
+                response = grecaptcha.getResponse();
+            if (response.length === 0) {
+                $('.msg-error').text("reCAPTCHA is mandatory");
+                if (!$captcha.hasClass("error")) {
+                    $captcha.addClass("error");
+                }
+            } else {
+                $('.msg-error').text('');
+                $captcha.removeClass("error");
+                alert('reCAPTCHA marked');
+            }
+        })
+    </script> -->
+
+    <script type="text/javascript" src="js/scriptCrearUsuario.js"></script>
+
+</body>
+
+</html>

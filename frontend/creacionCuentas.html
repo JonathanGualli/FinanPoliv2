@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>FinanPoli</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="icon" type="favicon/x-icon" href="resources/img/logo.png">
+
+        <!--Cargano Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Cargando Sweet alert -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        
+        <!--Cargando css-->
+        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        
+    </head>
+
+    <!-- Inicio NavBar -->
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark p-md-3">
+            <div class="container navContainer">
+                <a href="#" class="navbar-brand" style="margin-bottom: -30px; margin-top: -15px;">
+                    <div class="mb-3 mx-auto" style="display: flex; align-items: center; justify-content: center;
+                    background-color: white; width: 75px; 
+                    height: 75px; border-radius: 50%; "
+                    id="nav-bar-div">
+                        <img src="resources/img/logo.png" alt="logo" width="60" height="69" 
+                        style="margin-top: 2px;">
+                    </div>
+                </a>
+                <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-level="Toggle navigation"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mx-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="creacionClientes.html" class="nav-link">Registro Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="creacionCuentas.html" class="nav-link">Crear Cuentas</a>
+                        </li>
+                
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="salir()" style="cursor: pointer;">Salir</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Fin NavBar -->
+
+    <body class="container-fluid" id="cuerpo2">
+    <!-- Inicio Creación de Cuentas -->
+
+    <div id="CreacionCuentas" class="row">
+
+        <div class="row" id="tituloCreacionCuentas">
+            <h1 class="text-center">Creación de Cuenta Bancaria</h1>
+        </div>
+
+        <form class="row mx-auto" id="form-verificar-cliente">
+            <div class="col-md-8">
+                <label for="titularCuenta" class="form-label">Titular de la cuenta</label>
+                <input type="text" class="form-control" id="cuentaTitular" name="cuentaTitular" 
+                required
+                placeholder="Ingrese el número de cédula"
+                pattern="[0-9]{10}"
+                title="Ingrese un número de cédula (10 dígitos)"
+                >
+            </div>
+
+            <div class="col-md-4">
+                <button type="submit" class="btn btn-success mx-auto" id="validar-cuenta">Validar</button>
+            </div>
+            
+            <div class="col-md-8" id="agregarCliente">
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-outline-success mx-auto" id="aniadir-titular" style="display: none;" onclick="añadirTitular()" >Añadir Titular</button>
+            </div>
+
+            <div class="col-md-12" id="noCliente">
+            </div>
+
+
+
+        </form>
+
+        <div class="clearfix"></div>
+
+        <form class="row mx-auto" id="form-cuentas" style="margin-bottom: 220px;">
+
+            <div class="col-md-12">
+                <label for="titulares" class="form-lanel">Titular/es de la cuenta</label>
+            </div>
+
+            <div class="row mx-auto"  id="titulares-cuenta">
+            
+            </div>
+
+            <div class="col-md-6">
+                <label for="tipoCuenta" class="form-label">Tipo de cuenta</label>
+                <div class="form-check">
+                    <input type="radio" name="rbtnTipoCuentas" class="form-check-input" id="rbtnCorriente" checked value="Corriente">
+                    <label for="rbtnCorriente" class="form-check-label">
+                        Corriente
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="rbtnTipoCuentas" class="form-check-input" id="rbtnAhorro" value="Ahorro">
+                    <label for="rbtnAhorro" class="form-check-label">
+                        Ahorro
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="limiteCuenta" class="form-label">Limite de transacciones diarias</label>
+                <input type="text" class="form-control" id="cuentaLimite" name="cuentaLimite" 
+                required
+                pattern="^([0-9][0-9]|[0-9][0-9][0-9]|[0-4][0-9][0-9][0-9]|5000)$"
+                title="Solamente se pueden ingresar números, máximo $5000 para transacciones diarias, mínimo $10"
+                >
+            </div>
+        
+            <button type="submit" class="btn btn-success mx-auto" id="agregar-cuenta" disabled>Aceptar</button>
+
+        </form>
+
+    </div>
+    
+    <!-- Fin Creación de Cuentas -->
+
+    <!--<script type="text/javascript" src="js/navBar.js"></script>-->
+    <script type="text/javascript" src="js/scriptCuenta.js"></script>
+
+    </body>
+
+
+</html>
+

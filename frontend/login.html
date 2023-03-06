@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>FinanPoli Login Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="favicon/x-icon" href="resources/img/logo.png">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+        <!-- Cargando Sweet alert -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        
+
+        <!--Cargando css-->
+        <link rel="stylesheet" type="text/css" href="css/stylesLogin.css"/>
+        
+    </head>
+
+    <body>
+        <img src="./resources/img/fondo.png" class="wave">
+        <div class="container">
+            <div class="img">
+                <img src="./resources/img/telefono.svg">
+            </div>
+            <div class="login-content">
+                <form id="form-login"> 
+                    <img src="./resources/img/logo.png">
+                    <h2 class="title">Bienvendio</h2>
+
+                    <div class="input-div one">
+                        <div class="i">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="div">
+                            <h5>Usuario</h5>
+                            <input type="text" class="input" id="usuario" name="usuario" required>
+                        </div>
+                    </div>
+                    <div class="input-div pass">
+                        <div class="i">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="div">
+                            <h5>Clave</h5>
+                            <input type="password" class="input" id="password" name="password" required>
+                        </div>
+                    </div>
+                    <a style="cursor: pointer" onclick="inicioAdmin();">Iniciar como administrador</a>
+                    <a href="comprobacion.html">¡Registrarse Ahora!
+                    </a>
+                    <input type="submit" class="btn" value="Login">
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="./js/scriptLogin.js"></script>
+    </body>
+
+
+</html>

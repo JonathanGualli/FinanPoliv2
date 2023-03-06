@@ -1,0 +1,808 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+  #carrusell{
+    width: 100%;
+  }
+  #banner01{
+    background-image: url('../resources/img/index/bannerBanco.png');
+    background-size: cover;
+    height: 600px;
+  }
+  #banner02{
+    background-image: url('../resources/img/index/bannerBanco2.jpg');
+    background-size: cover;
+    height: 600px;
+  }
+  
+  #banner03{
+    background-image: url('../resources/img/index/bannerBanco3.jpeg');
+    background-size: cover;
+    height: 100px;
+  }
+  
+  
+  /* Inicio Barra de Menú */
+  /**/
+  
+  .navbar {
+    background-color: #38d39f !important;
+  }
+  .navbar-brand img{
+    height: 60px;
+    width: auto;
+  }
+  
+  .navbar .login-btn {
+    background-color: #12a4a4;
+    border-color: #12a4a4;
+    color: #fff;
+    margin-right: 15px;
+  }
+  
+  .navbar .login-btn:hover {
+    background-color: #fff;
+    border-color: #12a4a4;
+  }
+  
+  
+  .navbar .logout-btn {
+    background-color: #12a4a4;
+    border-color: #12a4a4;
+    color: #fff;
+    margin-right: 15px;
+  }
+  
+  .navbar .logout-btn:hover {
+    background-color: #fff;
+    border-color: #12a4a4;
+  }
+  
+  .nav-link{
+    color: #666;
+    background: none;
+    transition: all 300ms;
+    margin-right: 25px;
+  }
+  
+  .nav-link:hover{
+    background:white;
+    border-radius: 10px;
+    color: #1abc9c;
+    transition: all 600ms;
+  }
+  
+  .dropdown-item:hover{
+    background-color: #1abc9c;
+    transition: all 300ms;
+  }
+  
+  /* Fin Barra de Menú*/
+  
+  /* Inicio Auspiciantes*/
+  
+  /* 
+  #sponsors{
+    height: 150px;
+    background: #439A97;
+    text-decoration: none;
+  }
+  
+  #sponsors img{
+    width: 95%;
+  }
+  */
+  /*
+  #sponsors{
+    background-image: url('img/fondo10.jpg');
+    background-size: cover; 
+  }
+  
+  #sponsors a{
+    text-decoration: none;
+  }
+  
+  #sponsors img{
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 5px;
+    padding: 15px;
+    transition: all 1s;
+  }
+  
+  #sponsors img:hover{
+    transform: scale(1.2, 1.2);
+  }
+  
+  @media(max-width: 580px){
+    #sponsors{
+      display: none;
+    }
+  }
+  
+  /* Fin Auspiciantes*/
+  
+  /* Inicio Sobre Nosotros */
+  #sobreNosotros{
+    background-image: url('../resources/img/index/fondo-verde.jpg');
+    background-size: cover;
+  }
+  
+  #infoSN{
+    text-align: center;
+    width: 35%;
+    margin: auto;
+  }
+  
+  #infoSN h1{
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
+  
+  #infoSN p {
+    margin-bottom: 50px;
+  }
+  
+  #videoSN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #videoSN img{
+    border: 1px solid green;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+  /* Fin Sobre Nosotros */
+  
+  /* Inicio Nuestras Categorias */
+  
+  #Servicios{
+    background-image: url('../resources/img/index/fondo-blanco.png');
+  }
+  
+  #tituloCategorias h1{
+    margin-top: 150px;
+  }
+  
+  .card-container{
+    background: none;
+    position: relative;
+    width: 18rem;
+    perspective: 200rem;
+    height: 412px;
+    margin-bottom: 50px;
+  }
+  
+  .card-container:hover .card-front{
+    transform: rotateY(180deg);
+  }
+  
+  .card-container:hover .card-back{
+    transform: rotateY(0deg);
+  }
+  
+  .card-back{
+    background-image: url(../resources/img/index/fo.jpg);
+    background-size: cover;
+    transform: rotateY(180deg);
+  }
+  
+  .card-front{
+    background: #38d39f;
+  }
+  
+  .card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all 0.9s;
+    backface-visibility: hidden;
+  }
+  
+  .card-back .card-body{
+    position: relative;
+  }
+  
+  
+  
+  .card-body a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -10% 0 0 -16%;
+  }
+  
+  .card-body p{
+    margin-top: 45px;
+  }
+  
+  /* Fin Nuestars Categorias */
+  
+  
+  /* Inicio formulario de contacto */
+  
+  #formContacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    border-bottom: 5px solid #1abc9c;
+  }
+  
+  #formContacto .container{
+    width: 80%;
+    margin-top: 50px;
+  }
+  
+  #titulo-form{
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  #formularios{
+    background: white;
+    border: 25px solid white;
+    border-radius: 15px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  
+  #formularios input{
+    background: #f4f4f4;
+  }
+  
+  #button-form{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  #button-form button[type=submit]{
+    position: relative;
+    width: 100px;
+    color:white;
+    padding: 6px;
+    border: 1.2px solid #38d39f;
+    border-radius: 25px;
+    background: #38d39f;
+  }
+  
+  #informacion-form{
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  
+  #llamanos{
+    background: #38d39f;;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom:15px;
+  }
+  
+  #llamanos h6{
+    margin-top: 25px;
+    margin-left: 15px;;
+  }
+  
+  #llamanos #primerTelefono{
+    margin-bottom: -2px;
+      margin-left: 15px;;
+  }
+  
+  #llamanos #segundoTelefono{
+    margin-bottom: 25px;
+      margin-left: 15px;;
+  }
+  
+  /**/
+  
+  #localizacion{
+    background: #38d39f;;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom:15px;
+  }
+  
+  #localizacion h6{
+    margin-top: 25px;
+    margin-left: 15px;;
+  }
+  
+  #localizacion #primeraLocalizacion{
+    margin-bottom: -2px;
+      margin-left: 15px;;
+  }
+  
+  #localizacion #segundaLocalizacion{
+    margin-bottom: 25px;
+      margin-left: 15px;;
+  }
+  
+  /**/
+  #horario{
+    background: #38d39f;;
+    padding: 10px;
+    border-radius: 20px;
+      margin-bottom:15px;
+  }
+  
+  #horario h6{
+    margin-top: 25px;
+    margin-left: 15px;;
+  }
+  
+  #horario #primerHorario{
+    margin-bottom: -2px;
+    margin-left: 15px;;
+  }
+  
+  #horario #segundoHorario{
+    margin-bottom: 25px;
+    margin-left: 15px;;
+  }
+  
+  .fa-clock{
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  
+  .fa-compass{
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  
+  .fa-mobile-screen-button{
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  
+  /* Fin formulario de contacto */
+  
+  /**** Inicio Footer *****/
+  
+  .footer-widget p{
+    margin-bottom: 27px;
+  }
+  
+  #dk-footer p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: white;
+    line-height: 28px;
+  }
+  
+  .animate-border{
+    position: relative;
+    display: block;
+    width: 115px;
+    height: 3px;
+    background: #38d39f;
+  }
+  
+  .animate-border:after{
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    border-left: 10px solid #ffff;
+    border-right: 10px solid #fff;
+    animation: animborder 2s linear infinite;
+  }
+  
+  @keyframes animborder{
+    0%{
+      -webkit-transform: translateX(0px);
+      transform: translateX(0px);
+    } 100% {
+      -webkit-transform: translateX(113px);
+      transform: translateX(113px);
+    }
+  }
+  
+  .dk-footer{
+    padding: 75px 0 0;
+    background-image: url('../resources/img/index/fondo-verde.jpg');
+    position: relative;
+    z-index: 2;
+  
+  
+  
+  
+  }
+  
+  .dk-footer .contact-us{
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-left: 80px;
+  }
+  
+  /*
+  .dk-footer .contact-us .contact-info{
+    margin-left: 50px;
+  }
+  
+  
+  .dk-footer .contact-us .contact-us-last {
+    margin-left: -80px; 
+  }
+  
+  .dk-footer .contact-icon i {
+    font-size: 24px;
+    top: -15px;
+    position: relative;
+    color: #1abc9c;
+  }
+  */
+  .dk-footer-box-info{
+    position: relative;
+    top: -75px;
+    background: #38d39f;
+    border-radius: 0px 0px 15px 15px;
+    padding: 40px;
+    z-index:2px;
+  }
+  
+  .dk-footer-box-info .footer-social-link h3{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  
+  .dk-footer-box-info .footer-social-link ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dk-footer-box-info .footer-social-link li{
+    display: inline-block;
+  }
+  
+  .dk-footer-box-info .footer-social-link a i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    background: #000;
+    margin-right: 5px;
+    color: white;
+  }
+  
+  .dk-footer-box-info .footer-social-link a i.fa-facebook {
+    background-color: #3B5998; 
+  }
+  .dk-footer-box-info .footer-social-link a i.fa-twitter {
+    background-color: #55ACEE; 
+  }
+  .dk-footer-box-info .footer-social-link a i.fa-google-plus {
+    background-color: #DD4B39;
+  }
+  .dk-footer-box-info .footer-social-link a i.fa-linkedin {
+    background-color: #0976B4; 
+  }
+  .dk-footer-box-info .footer-social-link a i.fa-instagram {
+    background-color: #B7242A;
+  }
+  
+  
+  .footer-info-text{
+    margin: 26px 0 32px;  
+  }
+  
+  .footer-left-widget{
+    padding-left: 80px;
+  }
+  
+  .footer-widget .section-heading{
+    margin-bottom: 35px;
+  }
+  
+  .footer-widget h3{
+    font-size: 24px;
+    color: white;
+    position: relative;
+    margin-bottom: 15px;
+    max-width: fit-content;
+  }
+  
+  .footer-widget ul{
+    width: 50%;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-widget li {
+    margin-bottom: 18px;
+  }
+  
+  .footer-widget a{
+    color: #555;
+    transition: all 0.3s;
+  }
+  
+  .footer-widget a:hover{
+    color: white;
+  }
+  
+  .footer-widget:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  .dk-footer-form{
+    position: relative;
+  }
+  
+  .dk-footer-form input[type=email]{
+    padding: 14px 28px;
+    border-radius: 50px;
+    background: white;
+    border: 1px solid #1abc9c; ;
+  }
+  
+  .dk-footer-form button[type=submit]{
+    position: absolute;
+    font-size: 17px;
+    top: 0px;
+    right: 0px;
+    padding: 14px 24px 12px 17px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 1.2px solid #1abc9c;
+    background: #1abc9c;
+  }
+  
+  .dk-footer-form button:hover{
+    cursor: pointer;
+  }
+  
+  .contact-us{
+    position: relative;
+    z-index: 2;
+    margin-top: 65px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #contact-icon-left {
+    position: absolute;
+  }
+  
+  #contact-icon-right {
+    position: absolute;
+  }
+  
+  /*
+  .contact-icon i {
+    font-size: 36px;
+    top: -5px;
+    position: relative;
+    color: #007bff;
+  }*/
+  
+  #icon-left{
+    font-size: 36px;
+    top: -5px;
+    position: relative;
+    color: green;
+  }
+  
+  #icon-right{
+    font-size: 40px;
+    top: 9px;
+    position: relative;
+    color: green;
+  }
+  
+  #contact-info-left{
+    margin-left: 75px;
+  }
+  
+  #contact-info-right {
+    margin-left: 60px;
+  }
+  
+  .contact-info h3{
+    font-size: 20px;
+    color: green;
+    margin-bottom: 0;
+  }
+  
+  .copyright {
+    padding: 28px 0;
+    margin-top: 0px;
+    background-color: #38d39f;
+  }
+  
+  .copyright span, .copyright a{
+    color: #555;
+    transition: all 0.3 linear;
+  }
+  
+  .copyright a:hover{
+    color: white;
+  }
+  
+  .copyright-menu ul {
+    text-align: right;
+    margin: 0;
+  }
+  
+  .copyright-menu li {
+    display: inline-block;
+    padding-left: 20px;
+  }
+  
+  .back-to-top{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .back-to-top .btn-dark{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    padding: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #2e2e2e;
+    display: none;
+    z-index: 999;
+    transition: all 0.3 linear;
+  }
+  
+  .back-to-top .btn-dark:hover{
+    cursor: pointer;
+    background: #FA6742;
+    border-color: #FA6742;
+  }
+  
+  #contenedorFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  /* Fin Footer */
+  
+  /* Inicio mapa */
+  #mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  #mapa iframe{
+    width:80%;
+    height: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  #info-mapa{
+    margin: auto;
+  }
+  
+  #info-mapa h3{
+    margin-bottom: 50px;
+  }
+  /* Fin mapa */
+  
+  /* Inicio proceso para ser parte */
+  
+  #proceso{
+    background-image: url('../resources/img/index/fondo-celeste.jpg');
+    background-size: cover;
+  }
+  
+  #proceso-titulo{
+    margin-top: 50px;
+    margin-bottom:10px;
+  }
+  
+  #proceso-titulo h1{
+    border-bottom: 3px solid white;
+    margin-top: 100px;
+  }
+  
+  #proceso-imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  #proceso-imagen img{
+    width: 4000%;
+  }
+  
+  #proceso-pasos{
+    padding: 10% 10% 10% 5%;
+  }
+  
+  #proceso-pasos p{
+    font-size: 20px;  
+  }
+  
+  #primeros-iconos{
+    margin-bottom: 10px;
+  }
+  
+  #primeros-pasos{
+    margin-bottom: 150px;
+  }
+  
+  #segundos-iconos{
+    margin-bottom: 10px;
+  }
+  
+  .fa-cash-register{
+    font-size: 80px;
+    color: #38d39f;
+    transition: all 1s;
+  }
+  
+  .fa-key{
+    font-size: 80px;
+    color: #38d39f;
+    transition: all 1s;
+  }
+  
+  .fa-grin-alt{
+    font-size: 80px;
+    color: #38d39f;
+    transition: all 1s;
+  }
+  
+  .fa-sack-dollar{
+    font-size: 80px;
+    color: #38d39f;
+    transition: all 1s;
+  }
+  
+  .fa-cash-register:hover{
+    transform: scale(1.2, 1.2);
+  }
+  
+  .fa-key:hover{
+    transform: scale(1.2, 1.2);
+  }
+  
+  .fa-grin-alt:hover{
+    transform: scale(1.2, 1.2);
+  }
+  
+  .fa-sack-dollar:hover{
+    transform: scale(1.2, 1.2);
+  }
+  
+  #primeros-iconos div{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  #segundos-iconos div{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  /* Fin Procesos para ser parte */
+  
+  #fondo{
+    background-image: url('../resources/img/index/fondo-madera.jpg');
+  }

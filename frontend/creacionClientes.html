@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>FinanPoli</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="icon" type="favicon/x-icon" href="resources/img/logo.png">
+
+        <!--Cargano Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Cargando sweetAlert -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+        <!--Cargando css-->
+        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        
+    </head>
+
+    <!-- Inicio NavBar -->
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark p-md-3">
+            <div class="container navContainer">
+                <a href="#" class="navbar-brand" style="margin-bottom: -30px; margin-top: -15px;">
+                    <div class="mb-3 mx-auto" style="display: flex; align-items: center; justify-content: center;
+                    background-color: white; width: 75px; 
+                    height: 75px; border-radius: 50%; "
+                    id="nav-bar-div">
+                        <img src="resources/img/logo.png" alt="logo" width="60" height="69" 
+                        style="margin-top: 2px;">
+                    </div>
+                </a>
+                <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-level="Toggle navigation"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mx-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="creacionClientes.html" class="nav-link">Registro Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="creacionCuentas.html" class="nav-link">Crear Cuentas</a>
+                        </li>
+                
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="salir()" style="cursor: pointer;">Salir</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Fin NavBar -->
+
+    <body class="container-fluid" id="cuerpo">
+
+    <!-- <div class="row">
+        <div class="alert alert-danger col" role="alert" id="myAlert"
+        style="margin-top: 20px; margin-bottom: -15px; margin-right: 10px; 
+        position: fixed; width: fit-content; right: 0;
+        ">
+            ejemplo de alerta brouuuuuuuuuuuuuuuuuuu
+        </div>
+    </div> -->
+
+    <!-- Inicio Registro Clientes -->
+    <div id="RegistroClientes" class="row">
+        <div class="row" id= tituloRegistroClientes>
+            <h1 class="text-center">Registro de Clientes</h1>
+        </div>
+
+        <div class="row mx-auto" id="validacion">
+        </div>
+
+        <div class="clearfix"></div>
+
+        <form class="row mx-auto" id="form-clientes">
+
+            <div class="col-md-6">
+                <label for="nombres" class="form-label">Nombres</label>
+                <input type="text" class="form-control" id="clienteNombes" name="clienteNombres" 
+                required
+                minlength="5"
+                maxlength="30"
+                pattern="[A-Za-z ]+"
+                title="Solamente se pueden ingresar letras"
+                >
+                <!-- <div id="nombresHelp" class="form-text">Ingresa los nombres del cliente</div> -->
+            </div>
+
+            <div class="col-md-6">
+                <label for="apellidos" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="clienteApellidos" name="clienteApellidos" 
+                required
+                minlength="5"
+                maxlength="30"
+                pattern="[A-Za-z ]+"
+                title="Solamente se pueden ingresar letras">
+                <!-- <div id="nombreHelp" class="form-text">Ingresa los nombres del cliente</div> -->
+            </div>
+
+            <div class="col-md-12">
+                <label for="numero_cedula" class="form-label">Numero de Cédula</label>
+                <input type="text" class="form-control" id="clienteCedula" name="clienteCedula" 
+                required
+                pattern="[0-9]{10}"
+                title="Solo números,
+                    Un número de cédula debe tener 10 digitos">
+                <!-- <div id="nombreHelp" class="form-text">Ingresa los nombres del cliente</div> -->
+            </div>
+            
+            <div class="col-md-12">
+                <label for="fecha_nacimiento" class="form-label">Fecha de Nacimiento</label>
+                <input type="date" class="form-control" id="clienteFecha" name="clienteFecha" aria-describedby="fechaHelp" 
+                required
+                min="1900-01-01"
+                max="2005-01-01">
+                <div id="fechaHelp" class="form-text">Año-Mes-Día   Ej:2000-07-04</div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="clienteTelefono" name="clienteTelefono" 
+                required
+                pattern="[0-9]{10}"
+                title="Solo números,
+                    Un número de teléfono debe tener 10 digitos"
+                >
+                <!-- <div id="nombreHelp" class="form-text">Año-Mes-Día   Ej:2000-07-04</div> -->
+            </div>
+
+            <div class="col-md-6">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="clienteEmail" name="clienteEmail" 
+                required
+                maxlength="30">
+                <!-- <div id="nombreHelp" class="form-text">Año-Mes-Día   Ej:2000-07-04</div> -->
+            </div>
+
+            <div class="col-md-6">
+                <label for="ciudad" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="clienteCiudad" name="clienteCiudad" 
+                required
+                minlength="5"
+                maxlength="20"
+                pattern="[A-Za-z ]+"
+                title="Solamente se pueden ingresar letras">
+                <!-- <div id="nombreHelp" class="form-text">Año-Mes-Día   Ej:2000-07-04</div> -->
+            </div>
+
+            <div class="col-md-6">
+                <label for="direccion" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="clienteDireccion" name="clienteDireccion" 
+                required
+                minlength="5"
+                maxlength="30"
+                >
+                <!-- <div id="nombreHelp" class="form-text">Año-Mes-Día   Ej:2000-07-04</div> -->
+            </div>
+
+            <div class="col-md-12">
+                <label for="situacion_laboral" class="form-label">Situación Laboral</label>
+                <select name="clienteLaboral" id="clienteLaboral" class="form-select" aria-label="Situacion Laboral" required>
+                    <option selected></option>
+                    <option value="Trabaja en una empresa">Trabajo en una empresa</option>
+                    <option value="Trabajador independiente">Soy trabajador independiente</option>
+                    <option value="No trabaja">No trabajo</option>
+                </select>
+                <!-- <input type="text" class="form-control" id="clienteLaboral" name="clienteLaboral"> -->
+                <!-- <div id="fechaHelp" class="form-text">Año-Mes-Día   Ej:2000-07-04</div> -->
+            </div>
+
+            <div class="col-md-12">
+                <label for="estado_financiero" class="form-label">Estado Financiero</label>
+                <select name="clienteFinanciero" id="clienteFinanciero" class="form-select" aria-label="Estado Financiero" required>
+                    <option selected></option>
+                    <option value="Menos de $400">Menos de $400</option>
+                    <option value="$400 a $1000">$400 a $1000</option>
+                    <option value="$1000 a $3000">$1000 a $3000</option>
+                    <option value="Más de $3000">Mas de $3000</option>
+                </select>
+                <!-- <input type="text" class="form-control" id="clienteFinanciero" name="clienteFinanciero"> -->
+                <!-- <div id="fechaHelp" class="form-text">Año-Mes-Día   Ej:2000-07-04</div> -->
+            </div>
+
+            <button type="submit" class="btn btn-success mx-auto" id="agregar-cliente">Aceptar</button>
+
+        </form>
+
+
+    </div>
+    <!-- Fin Registro Clientes -->
+
+    <!--<script type="text/javascript" src="js/navBar.js"></script>-->
+    <script type="text/javascript" src="js/script.js"></script>
+
+    </body>
+
+
+</html>

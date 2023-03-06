@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>FinanPoli</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="favicon/x-icon" href="resources/img/logo.png">
+
+        <!--Cargano Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Cargando fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+        
+        <!--Cargando css-->
+        <link rel="stylesheet" type="text/css" href="css/stylesBancaWeb.css"/>
+
+        <!-- Cargando Sweet alert -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        
+        
+    </head>
+
+    <body>
+        <header class="tm-header" id="tm-header">
+            <div class="tm-header-wrapper">
+                <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="tm-site-header">
+                    <div class="mb-3 mx-auto tm-site-logo"><img src="./resources/img/logo.png" width="100px"></div>            
+                    <h1 class="text-center">FinanPoli</h1>
+                </div>
+                <nav class="tm-nav" id="tm-nav">            
+                    <ul>
+                        <li class="tm-nav-item"><a href="bancaProductos.html" class="tm-nav-link">
+                            <i class="fas fa-home"></i>
+                            Mis Productos
+                        </a></li>
+                        
+                        <li class="tm-nav-item-collapse dropdown" style="border: 0px">
+                            <a href="#" class="tm-nav-link collapsed" role="button" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#transferencias-collapse"> 
+                            <i class="fa-solid fa-money-bill-transfer"></i>
+                            Transferencias</a>
+
+                        <div id="transferencias-collapse" class="collapse">
+                            <ul class="btn-toggle-nav">
+                                <li class="tm-nav-item-opcioness">
+                                    <a href="transferenciasMB.html" class="tm-nav-link-opciones">Dentro del mismo banco</a>
+                                </li>
+                                <li class="tm-nav-item-opciones">
+                                    <a href="#" class="tm-nav-link-opciones">Interbancarias</a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                        </li>
+
+                        <li class="tm-nav-item"><a href="#" class="tm-nav-link">
+                            <i class="fa-solid fa-comment-dollar"></i>
+                            Pagos
+                        </a></li>
+                        <li class="tm-nav-item active"><a href="bancaContactos.html" class="tm-nav-link">
+                            <i class="fa-regular fa-address-card"></i>
+                            Mis Contactos
+                        </a></li>
+                    </ul>
+                </nav>
+                <div class="tm-mb-65">
+                    <a rel="nofollow" href="#" class="tm-social-link">
+                        <i class="fab fa-facebook tm-social-icon"></i>
+                    </a>
+                    <a href="#" class="tm-social-link">
+                        <i class="fab fa-twitter tm-social-icon"></i>
+                    </a>
+                    <a href="#" class="tm-social-link">
+                        <i class="fab fa-instagram tm-social-icon"></i>
+                    </a>
+                    <a href="#" class="tm-social-link">
+                        <i class="fab fa-linkedin tm-social-icon"></i>
+                    </a>
+                </div>
+                <p class="tm-mb-80 pr-5 text-white">
+                </p>
+            </div>
+        </header>
+
+        <div class="container-fluid">
+            <div class="tm-main">
+                <div class="row tm-row" id="infoUsuarioo">
+                    <div class="col-md-12" id="infoUsuario">
+                        <p id="nombreUsuario"><i style="color: #38d39f; margin-right: 10px;" class="fa-solid fa-user"></i></p>
+                        <button id="btnSalir" type="button" class="btn btn-outline-success" onclick="salir()">Salir</button>
+                    </div>
+                </div>
+<!-- -------------------------- -->
+                <div id="transferencia"> 
+                    <div class="row tm-row">
+                        <p id="titulo" style="margin-bottom: 20px;">Mis Contactos</p>
+                    </div>
+                </div>
+
+                <div id="registrarContactos" class="mx-auto" style="margin-top: 25px;">
+                    <div class="row">
+                        <div class="col-6" style="border-right: 2px solid green;">
+                            <div class="row mx-auto">
+                                <button type="button" class="btn btn-success"
+                                style="width: 95%; margin: 0px auto;
+                                margin-top: 10px;"
+                                onclick="agregarContacto()">Agregar Contacto</button>
+                            </div>
+
+                            <div class="row mx-auto" style= "width: 95%; margin-top: 20px;" id="colocarContacto">
+                                <!-- <div class="col-3" style="display: flex; justify-content: center; align-items: center;">
+                                    <i class="fa-solid fa-user" style="font-size: 35px; color: #38d39f;"></i>
+                                </div>
+                                <div class="col-9">
+                                    <p style="margin-bottom: -15px; margin-top: -10px; font-size: 1.2rem; color: green;"><b>Mishel Estefania Sanchez</b></p>
+                                    <p style="margin-bottom: -18px; font-size: 0.9rem; color: #666;">FinanPoli</p>
+                                    <p style="margin-bottom: -10px; font-size: 0.9rem; color: #666;">1752506251</p>
+                                </div> -->
+                            </div>
+
+                        </div>
+                        <div class="col-6">
+                            <div class="row mx-auto" id="infoContacto">
+                                <div class="col-10" style="border-bottom: 1px solid green; margin-top: 18px;">
+                                    <p style="width: 95%; font-size: 1.8rem; font-weight: bold; color: rgb(3, 82, 3); display: contents;"
+                                    id="infoNombre">----------------</p>
+                                    <i class="fa-solid fa-trash-can" style="margin-left: 15px; font-size: 1.4rem; color: #38d39f"></i>
+                                </div>
+                                <div class="col-12">
+                                    <p class="cnTitulo" style="margin-top: 15px;">Tipo identificacion</p>
+                                    <p class="cnText">Cédula</p>
+                                    <p class="cnTitulo">Numero Identificacion</p>
+                                    <p class="cnText" id="infoNumeroIdentificacion">xxxxxxxxxxxxxxxx</p>
+                                    <p class="cnTitulo">Nombre del Banco</p>
+                                    <p class="cnText" id="infoNombreBanco">--------</p>
+                                    <p class="cnTitulo">Tipo de cuenta</p>
+                                    <p class="cnText" id="infoTipoCuenta">------</p>
+                                    <p class="cnTitulo">Número de cuenta</p>
+                                    <p style="color:#777; font-size: 17px;" id="infoNumeroCuenta">xxxxxxxxxxxx</p>
+                                </div>
+                            </div>
+
+                            <form id="formAgregarContacto" style="display: none;">
+                                <div class="" style="margin-left: 2px; width: 95%">
+                                    <p style="margin-top: 20px; color: green; margin-bottom: -5px"><b>Beneficiario</b></p>
+                                    <label for="Banco" class="form-label" style="font-size: 0.9rem; margin-bottom: -6px;">Banco al que pertenece</label>
+                                    <select name="benBanco" id="benBanco" class="form-select mb-3" required>
+                                        <option selected></option>
+                                        <option value="FinanPoli">FinanPoli</option>
+                                    </select>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <label for="Cedula" class="fomr-label" style="font-size: 0.9rem; margin-bottom: -6px;">Número de cédula</label>
+                                            <input type="text" class="form-control" id="benCedula" name="benCedula"
+                                            required
+                                            placeholder="Número de cédula"
+                                            pattern="[0-9]{10}"
+                                            title="Solo números,
+                                                Un número de cédula debe tener 10 digitos"
+                                            disabled>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <button type="button" class="btn btn-outline-success" style="margin-top: 37px;" onclick="validarContacto();" id="validarContactoCedula">Validar</button>
+                                        </div>
+    
+                                    </div>
+
+                                    <label for="Nombres" class="fomr-label" style="font-size: 0.9rem; margin-bottom: -6px;">Identificador Beneficiario (Puedes modificarlo)</label>
+                                    <input type="text" class="form-control" id="benNombres" name="benNombres"
+                                    required
+                                    placeholder="Nombre Beneficiario (Puedes modificarlo)"
+                                    disabled
+                                    style="margin-bottom: 25px;">
+    
+                                    <div id="infoCuentaContacto" style="display: none;">
+                                        <p style="margin-top: 20px; color: green; margin-bottom: -5px; border-top: 1px solid green;"><b>Cuenta</b></p>
+    
+                                        <label for="tipoCuenta" class="form-label" style="font-size: 0.9rem; margin-bottom: -6px;">Tipo de cuenta</label>
+                                        <select name="benTipoCuenta" id="benTipoCuenta" class="form-select mb-3" required disabled>
+                                            <option selected></option>
+                                            <option value="Ahorro">Ahorro</option>
+                                            <option value="Corriente">Corriente</option>
+                                        </select>
+        
+                                        <input type="text" class="form-control" id="benNumeroCuenta" name="benNumeroCuenta"
+                                        required
+                                        placeholder="Número de cuenta"
+                                        disabled>
+        
+                                        <div class="mx-auto" style="margin-top: 20px; display: flex; 
+                                        align-items: center; justify-content: center;
+                                        margin-bottom: 20px;">
+                                            <button type="submit" class="btn btn-success" id="agregarContacto" 
+                                            disabled
+                                            >Aceptar</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                                </div>
+                                
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+            <script src="./js/jquery.min.js"></script>
+            <script src="./js/scriptBancaWeb.js"></script>
+            <script src="./js/scriptCrearContactos.js"></script>
+            <script src="https://kit.fontawesome.com/77cbcad674.js" crossorigin="anonymous"></script>
+    </body>
+</html>

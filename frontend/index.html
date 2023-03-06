@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>FinanPoli</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="icon" type="favicon/x-icon" href="resources/img/logo.png">
+    
+        <!--Cargano Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+        <script src="https://kit.fontawesome.com/77cbcad674.js" crossorigin="anonymous"></script>
+        <!-- 
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+        -->
+        <!--Cargando css-->
+        <link rel="stylesheet" type="text/css" href="css/stylesIndex.css"/>
+        
+    </head>
+    
+    <body>
+
+    <!--Inicio NavBar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <div class="container">
+            <a href="#" class="navbar-brand" style="margin-bottom: -30px; margin-top: -15px;">
+                    <div class="mb-3 mx-auto" style="display: flex; align-items: center; justify-content: center;
+                    background-color: white; width: 75px; 
+                    height: 75px; border-radius: 50%; "
+                    id="nav-bar-div">
+                        <img src="resources/img/logo.png" alt="logo" width="60" height="69" 
+                        style="margin-top: 2px;">
+                    </div>
+            </a>
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-level="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#carouselBanner" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sobreNosotros" class="nav-link">Quienes Somos</a>
+                    </li>
+<!--                     
+                    <li class="nav-item dropdown">
+                        <a href="#categorias" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
+                        <div id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a id="dropdown-item" class="dropdown-item" href="#categorias">Máxima</a>
+                            <a id="dropdown-item2" class="dropdown-item" href="#categorias">Primera</a>
+                            <a id="dropdown-item3" class="dropdown-item" href="#categorias">Segunda</a>
+                            <a id="dropdown-item4" class="dropdown-item" href="#categorias">Femenino</a>
+                        </div>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="#Servicios" class="nav-link">Servicios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#proceso" class="nav-link">Forma Parte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#formContacto" class="nav-link">Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link login-btn" target="_blank">Iniciar Sesion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--  Fin NavBar  -->
+
+    <!-- Inicio Carrusel -->
+    <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div id="banner01" class="banner-image active w-100 vh-100 d-flex justify-content-center align-items-center">
+                    <div class="content text-center">
+                        <!-- <h1 class="text-white"> Abrir una cuenta en FinanPoli es asi de facil como atarse los zapatos -->
+                        <!-- </h1> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div id="banner02" class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+                    <div class="content text-center">
+                        <h1 style="color: green">
+                            Abrir una cuenta en FinanPoli es asi de facil como atarse los zapatos
+                        </h1>
+                        <!-- <div class="carousel-caption">
+                            <h2></h2>
+                            <p style="color: green">
+                                
+                            </p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div id="banner03" class="banner-image w-100  vh-100 d-flex justify-content-center align-items-center">
+                    <div class="carousel-caption text-center">
+                        <h1 class="text-green"></h1>
+                        <p>
+                        <!--
+                            Quienes somos
+                            La liga Barrial deportiba Linux-Sport 
+                            brinda un espacio a personas futbolistas con gustos particulares en el software 
+                            libre 
+                        -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previus</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Fin Carrusel -->
+
+    <!-- Inicio Sobre Nosotros -->
+
+    <div id="sobreNosotros" class="row">
+        <div id="infoSN" class="col-md-6 text-center">
+            <h1 style="color: green">SOBRE NOSOTROS</h1>
+            <p style="color: #666">
+                FinanPoli es un Banco que esta enfocado en la eficiencia, busca apoyar el crecimiento sostenible de nuestros clientes,
+                es un socio  estratégico para nuestros clientes,pues aporta soluciones financieras para satisfacer sus 
+                necesidades con la seguridad y tranquilidad.
+            </p>
+        </div>
+
+        <div id="videoSN" class="col-md-6">
+            <img src="resources/img/index/BancaWeb.png" alt="logo" width="400" height="250" 
+            class="d-inline-block align-text-top"
+            style="border-radius: 15px;">
+        </div>
+    </div>
+
+    <!-- Fin Sobre Nosotros -->
+
+    
+    <!-- Inicio Nuestras Selecciones -->
+    <div id="Servicios">
+        <div id="tituloCategorias" class="row">
+            <h1 class="text-center" style="color: green">Nuestros Servicios</h1>
+        </div>
+        <div id="targetasCategorias" class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class=" card-container mx-auto mt-5">
+                    <div class="card card-front">
+                        <img src="resources/img/index/cuenta.png"  
+                        class="card-img-top" alt="categoria01"
+                        style="width: 90%; margin: 0 auto;">
+                        <div class="card-body">
+                            <h5 class="card-tittle text-center" style="color:green">Abrir una Cuenta</h5>
+                            <p class="text-center"
+                            style="color: #555">
+                                Abre tu cuenta para formar parte de FinanPoli.
+                            </p>
+                        </div>    
+                    </div>
+                    <div class="card card-back col-lg-4">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-dark">Ver más ...</a>
+                        </div>    
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class=" card-container mx-auto mt-5">
+                    <div class="card card-front">
+                        <img src="resources/img/index/transferencia.png" class="card-img-top" alt="categoria01"
+                        style="width: 90%; margin: 0 auto;">
+                        <div class="card-body">
+                            <h5 class="card-tittle text-center"
+                            style="color:green">
+                                Transferencias</h5>
+                            <p class="text-center" 
+                            style="color: #555">
+                            Realiza tus Transferencias  
+                            </p>
+                        </div>    
+                    </div>
+                    <div class="card card-back col-lg-4">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-dark">Ver más ...</a>
+                        </div>    
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class=" card-container mx-auto mt-5">
+                    <div class="card card-front">
+                        <img src="resources/img/index/transferencia-interbancaria.png"  class="card-img-top" 
+                        alt="categoria01"
+                        style="width: 90%; margin: 0 auto;">
+                        <div class="card-body">
+                            <h5 class="card-tittle text-center"
+                            style="color:green">
+                                Transferencias interbancarias </h5>
+                            <p class="text-center" style="margin-top: 20px; color: #555">
+                            Realiza tus Transferencia a contactos de otro banco
+                            </p>
+                        </div>    
+                    </div>
+                    <div class="card card-back col-lg-4">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-dark">Ver más ...</a>
+                        </div>    
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class=" card-container mx-auto mt-5">
+                    <div class="card card-front">
+                        <img src="resources/img/index/pagos.png" class="card-img-top" alt="categoria01"
+                        style="width: 90%; margin: 0 auto;">
+                        <div class="card-body">
+                            <h5 class="card-tittle text-center"
+                            style="color:green">Pagos en Linea</h5>
+                            <p class="text-center"
+                            style="color: #555">
+                                Paga tus facturas, servicios basicos
+                            </p>
+                        </div>    
+                    </div>
+                    <div class="card card-back col-lg-4">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-dark">Ver más ...</a>
+                        </div>    
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Fin Nuestras Selecciones -->
+
+    <!-- Inicio Proceso para ser parte de Linux-Sport -->
+    <div id="proceso" class="row">
+        <div id="proceso-titulo" class="row">
+            <h1 class="text-center" style="color: green">Quieres formar parte de FinanPoli</h1>
+        </div>
+        <div id="proceso-contenido" class="row">
+            <div id="proceso-imagen" class="col-md-5">
+                <img src="resources/img/index/miku.png"
+                style="width: 90%;">
+            </div>
+            <div class="col-md-6" id="proceso-pasos">
+                <div class="row" id="primeros-iconos">
+                    <div class="col-6">
+                        <i class="fa-solid fa-cash-register"></i>
+                    </div>
+
+                    <div class="col-6">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                    </div>
+                </div>
+                <div class="row" id="primeros-pasos">
+                    <div class="col-6">
+                        <h4 class="text-center" style="color: green">PASO 1</h4>
+                        <P class="text-center" style="color: #555">Registrate como un cliente del banco</P>
+                    </div>
+                    <div class="col-6">
+                        <h4 class="text-center" style="color: green">PASO 2</h4>
+                        <p class="text-center" style="color: #555">Abre una cuenta de ahorro o credito</p>
+                    </div>
+                </div>
+                <div class="row" id="segundos-iconos">
+                    <div class="col-6">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+
+                    <div class="col-6">
+                        <i class="fa-regular fa-grin-alt"></i>
+                    </div>
+                </div>
+                <div class="row" id="segundos-pasos">
+                    <div class="col-6">
+                        <h4 class="text-center" style="color: green">PASO 3</h4>
+                        <p class="text-center" style="color: #555">Crea tu usario y clave para ingresar a la banca web</p>
+                    </div>
+                    <div class="col-6">
+                        <h4 class="text-center" style="color: green">PASO 4</h4>
+                        <p class="text-center" style="color: #555">Disfruta de ser parte de FinanPoli</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Proceso para ser parte de Linux-Sport -->
+    
+    <div class="row" id="fondo">
+    <!-- Inicio Formulario de contacto -->
+    <div id="formContacto">
+        <div class="container">
+            <div id="titulo-form" class="row">
+                <p class="text-center" style="color: green; font-size: 3rem;">Contactanos</p>
+            </div>
+            <div id="formularios" class="row">
+                <div class="col-md-5">
+                    <input type="email" class="form-control" placeholder="Ingresa tu Nombre">
+                </div>
+                <div class="col-md-5">
+                    <input type="email" class="form-control" placeholder="Correo Electrónico">
+                </div>
+                <div class="col-md-2" id="button-form">
+                    <button type="submit">
+                        <i>ENVIAR</i>
+                    </button>
+                </div>
+            </div>
+            <div class="row" id="informacion-form">
+                <div class="col-md-12 col-lg-4">
+                    <div id="llamanos">
+                        <h6 class="text-left text-white"><i class="fa-solid fa-mobile-screen-button"></i>LLÁMANOS</h6>
+                        <p class="text-left text-white" id="primerTelefono">0962600023 ,</p>
+                        <p class="text-left text-white" id="segundoTelefono">0984704114</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-12 col-lg-4">
+                    <div id="localizacion">
+                        <h6 class="text-left text-white"><i class="fa-regular fa-compass"></i>LOCALIZACIÓN</h6>
+                        <p class="text-left text-white" id="primeraLocalizacion">Calle Profeta Jonáz ,</p>
+                        <p class="text-left text-white" id="segundaLocalizacion">Oe12-235</p>
+                    </div>                    
+                </div>
+
+                <div class="col-md-12 col-lg-4">
+                    <div id="horario">
+                        <h6 class="text-left text-white"><i class="fa-regular fa-clock"></i>HORARIO</h6>
+                        <p class="text-left text-white" id="primerHorario">Lunes a Viernes: 6am - 8pm</p>
+                        <p class="text-left text-white" id="segundoHorario">Sábados: 8am - 5pm</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Fin formulario de contacto-->
+
+    <!-- Inicio mapa -->
+    <div id="ubicacion" class="row">
+        <div id="info-mapa" class="col-md-5">
+            <h3 class="text-center" style="color: green; font-size: 4rem; font-family: cursive;">FinanPoli</h3>
+            <P class="text-center" style="color: green; font-size: 1.5rem;">Calle Profeta Jonáz Oe12-235</P>
+            <p class="text-center" style="color: green; font-size: 1.5rem;">-0.2627858618249443, -78.56081840141239</p>
+            <p class="text-center" style="color: green; font-size: 1.5rem;">FinanPoli@hotmail.com</p>
+        </div>
+        <div id="mapa" class="col-md-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.4440852359223!2d-78.56138837080084!3d-0.26283279998800996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d598d3dc0c5b11%3A0x2db7cb1b7d7e6ed!2sOE12-235%2C%20Tachina%2C%20Quito%20170607!5e0!3m2!1ses!2sec!4v1673730211973!5m2!1ses!2sec" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div> 
+    <!-- Fin mapa -->
+
+    </div>
+
+    <!--Inicio marcas Auspiciantes-->
+
+    <!-- Fin marcas Auspiciantes-->
+
+    <!-- Inicio Footer -->
+    <footer id="dk-footer" class="dk-footer">
+        <div class="container">
+            <div class="row" id="contenedorFooter">
+                <div class="col-md-12 col-lg-4">
+                    <div class="dk-footer-box-info">
+                        <a href="#" class="footer-logo">
+                            <div class="mx-auto" style="display: flex; align-items: center; justify-content: center;
+                            background-color: white; border-radius: 50%;
+                            height: 300px;">
+                                <img src="resources/img/logo.png" alt="debianLogo" class="img-fluid"
+                                >
+                            </div>
+                            
+                        </a>
+                        <p class="footer-info-text text-center">
+                            No olvides seguirnos en todas nuestras redes sociales
+                        </p>
+                        <div class="footer-social-link">
+                            <h3>Siguenos</h3>
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/jonathanfabricio.gualliramirez/">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/jonathan_gualli">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/jonathan-gualli-3312341a2/">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/jonathangualli/">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Fin de las redes sociales -->
+                    </div>
+                    <!-- Fin del footer info -->
+                </div>
+                <!-- Fin de la columna -->
+                <div class="col-md-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="contact-us">
+                                <div id="contact-icon-left" class="contact-icon">
+                                    <i id="icon-left" class="fa fa-map-o" aria-hidden="true"></i>
+                                </div>
+                                <!-- Fin contact icon-->
+                                <div id="contact-info-left" class="contact-info">
+                                    <h3 style="margin-top: -20px;">Jonathan Gualli <br>
+                                        Fausto Quizhpi <br>
+                                        Sthevven Morales <br>
+                                        Dayana Guacapiña <br>
+                                    </h3>
+                                    <p style="color: #555">523 Profeta Jonaz</p>
+                                </div>
+                                <!-- Fin Contact Info-->
+                            </div>
+                            <!-- Fin conctact Us-->
+                        </div>
+                        <!-- Fin columna-->
+                        <div class="col-sm-12 col-md-6">
+                            <div class="conctact-us contact-us-last">
+                                <div id="contact-icon-right" class="contact-icon contact-icon-telefono">
+                                    <i id="icon-right" class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                </div>
+                                <!-- Fin contact icon-->
+                                <div id="contact-info-right" class="contact-info">
+                                    <h3>09 626 0 0023</h3>
+                                    <p style="color: #555">Give us a cell</p>
+                                </div>
+                                <!-- Fin contact info-->
+                            </div>
+                            <!-- Fin contact us-->
+                        </div>
+                        <!-- Fin col-->
+                    </div>
+                    <!-- Fin contact Row-->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget footer-left-widget">
+                                <div class="section-heading">
+                                    <h3 style="color: rgb(0, 95, 0)">Enlaces útiles</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#carouselBanner">Inicio</a>
+                                    </li>
+                                    <li>
+                                        <a href="#sobreNosotros">Sobre Nosotros</a>
+                                    </li>
+                                    <li>
+                                        <a href="#formContacto">Contactanos</a>
+                                    </li>
+
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#categorias">Categorias</a>
+                                    </li>  
+                                    <li>
+                                        <a href="#formContacto">Contactanos</a>
+                                    </li>
+                                    <li>
+                                        <a href="#formContacto">Preguntas</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Fin footer widget-->
+                        </div>
+                        <!-- Fin col -->
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget">
+                                <div class="section-heading">
+                                    <h3 style="color: rgb(0, 95, 0)">Suscribete</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+
+                                <form action="#">
+                                    <div class="form-row">
+                                        <div class="col dk-footer-form">
+                                            <input type="email" class="form-control" placeholder="Email Address">
+                                            <button type="submit">
+                                                <i class="fa fa-send"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- Fin del form -->
+                            </div>
+                            <!-- Fin footer widget -->
+                        </div>
+                        <!-- Fin col -->
+                    </div>
+                    <!-- Fin row -->
+                </div>
+                <!-- Fin col -->
+            </div> 
+            <!-- Fin widget row-->
+        </div>
+        <!-- Fin contact container--> 
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <span>Copyright © 2023, All Right Reserved FinanPoli Team</span>
+                    </div>
+                    <!-- Fin columna -->
+                    <div class="col-md-6">
+                        <div class="copyright-menu">
+                            <ul>
+                                <li>
+                                    <a href="#carouselBanner" >Inicio</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terminos</a>
+                                </li>
+                                <li>
+                                    <a href="#">Politicas de Privacidad</a>
+                                </li>
+                                <li>
+                                    <a href="#formContacto">Contactos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Fin col-->
+                </div>
+                <!-- Fin row -->
+            </div>
+            <!-- Fin copyright conatiner -->
+        </div>
+        <!-- Fin copyright -->
+        
+        <div id="back-to-top" class="back-to-top">
+            <button class="btn btn-dark" title="Back to Top" style="display: block;">
+                <a href="#carouselBanner"><i class="fa fa-angle-up"></i></a>
+            </button>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
+
+    <script type="text/javascript" src="js/scriptIndex.js"></script>
+
+    </body>
+</html>

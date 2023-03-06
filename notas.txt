@@ -1,0 +1,17 @@
+Desarrollo del backend de FinanPoli utilizando (SQL Server, Express, NodeJS)
+
+********** Primero se creo un proyecto con NodeJs ********** 
+1. Moverse a la carpeta backend y ejecutar ---
+    npm init
+2. Llenar los datos del proyecto 
+3. Agregamos estas dependencias o paquetes para el proyecto 
+    -Agregar un servidor que procese las peticiones (xpress) y me permita definir las rutas
+        npm install express --save
+    -Paquetes para convertir nuestras peticines de backend en json
+        npm install body-parser --save
+    -Para refrescar el servidor 
+        npm install nodemon --save-dev 
+    -Para trabajar con SQL Server
+        npm install mssql --save
+    -Dotenv genera todos los cambios necesarios en el objeto process a través de su método config(), consumiendo el archivo . env. Y listo, eso es todo
+        npm install dotenv --save

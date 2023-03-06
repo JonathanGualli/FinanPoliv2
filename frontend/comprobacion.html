@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Verifica tu identidad</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="icon" type="favicon/x-icon" href="resources/img/logo.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet"  type="text/css" href="css/styles.css">
+
+    <!-- Cargando Sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        
+
+</head>
+
+    <!-- Inicio NavBar -->
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark p-md-3">
+            <div class="container navContainer">
+                <a href="#" class="navbar-brand" style="margin-bottom: -30px; margin-top: -15px;">
+                    <div class="mb-3 mx-auto" style="display: flex; align-items: center; justify-content: center;
+                    background-color: white; width: 75px; 
+                    height: 75px; border-radius: 50%; "
+                    id="nav-bar-div">
+                        <img src="resources/img/logo.png" alt="logo" width="60" height="69" 
+                        style="margin-top: 2px;">
+                    </div>
+                </a>
+                <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-level="Toggle navigation"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mx-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="salir()" style="cursor: pointer;">Salir</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Fin NavBar -->
+
+<body class="container-fluid" id="cuerpo">
+
+    <div id="identidad">
+        <div class="row">
+            <h1 class="text-center">Verifica tu Identidad</h1>
+        </div>
+        <form class="row mx-auto" id="formulario" name="form-comprobacion">
+            <div class="col-md-12">
+                <br>
+                <label for="titularCuenta" class="form-label">Numero de Cedula:</label>
+                <input type="text" class="form-control" id="Cedula" name="Cedula" 
+                required
+                placeholder="Ingrese el número de cédula"
+                pattern="[0-9]{10}"
+                title="Ingrese un número de cédula (10 dígitos)"
+                >
+            </div>
+
+            <div class="col-md-12">
+                           <br>
+                            <label for="clave" class="form-label">Contraseña temporal:</label>
+                            <input type="password" class="form-control" id="clave" name="clave"
+                            required
+                            placeholder="Ingrese la clave"
+                            title="Ingrese una clave que tenga Mínimo 8 caracteres, al menos una letra, un número y un carácter especial"
+                            ></br>
+                            <!--  pattern="^(?=.[A-Za-z])(?=.\d)(?=.[@$!%#?&])[A-Za-z\d@$!%*#?&]{8,}$" -->
+    
+            </div>
+
+            <button  type="submit"  class="btn btn-success mx-auto" id="agregar-cuenta" >Continuar</button>
+
+            <div class="col-md-12" id="agregarCliente">
+            </div>
+
+            <div class="col-md-12" id="noCliente">
+            </div>
+
+        </form>
+    </div>
+        <script type="text/javascript" src="js/scriptComprobacion.js"></script>
+
+
+</body>
+
+
+
+
+
+</html>

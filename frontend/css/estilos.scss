@@ -1,0 +1,209 @@
+$color-fondo: #fefdf8;
+$fondo_navbar: #2a7c6e;
+
+*{
+    background: $color-fondo;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Inicio NavBar */ 
+.navbar {
+    background: $fondo_navbar;
+
+    .navContainer{
+        background: $fondo_navbar;
+    }
+}
+
+.navbar-brand{
+    margin-top: 15px;
+    background: $fondo_navbar;
+}
+
+.navbar-brand img{
+    background: $fondo_navbar;
+    height: 60px;
+    width: auto;
+    margin-top: -12px;
+}
+
+.navbar-brand:hover{
+    color: #1abc9c;
+    transition: all 300ms;    
+}
+
+.navbar-toggler{
+    background: $fondo_navbar;
+    .navbar-toggler-icon{
+        background: $fondo_navbar; 
+    }
+}
+
+// .navbar-nav{
+//     background: $fondo_navbar;
+// }
+
+.navbar-collapse{
+    background: $fondo_navbar;
+}
+
+.nav-link{
+    color: white;
+    background: $fondo_navbar;
+    transition: all 300ms;
+}
+
+.nav-item{
+    background: $fondo_navbar;
+}
+
+.nav-link:hover{
+    background:white;
+    border-radius: 10px;
+    color: #1abc9c;
+    transition: all 600ms;
+}
+
+.dropdown-item:hover{
+    background-color: $color-fondo;
+    transition: all 300ms;
+}
+
+/* Fin NavBar */ 
+
+/* Inicio formulario de registro clientes */
+
+#RegistroClientes h1 {
+    color: $fondo_navbar;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#form-clientes{
+    width: 600px;
+    height: min-content;
+    padding: 4px;
+    border: 2px solid white;
+    border-radius: 12px;
+    color: $fondo_navbar;
+    
+    button{
+        background: $fondo_navbar;
+        width: 60%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+#validacion {
+    width: 600px;
+    height: min-content;
+    padding: 4px;
+}
+
+/* Fin formulario de registro clientes */
+
+/* Inicio formulario crear cuentas */
+
+#CreacionCuentas h1 {
+    color: $fondo_navbar;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#form-cuentas{
+    width: 600px;
+    height: min-content;
+    padding: 4px;
+    border: 2px solid white;
+    border-radius: 12px;
+    color: $fondo_navbar;
+    margin-top: 25px;
+    
+    #agregar-cuenta{
+        background: $fondo_navbar;
+        width: 60%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: white;
+    }
+}
+
+#form-verificar-cliente{
+    width: 600px;
+    height: min-content;
+    padding: 4px;
+    border: 2px solid white;
+    border-radius: 12px;
+    color: $fondo_navbar;
+    
+    #validar-cuenta{
+        background: $fondo_navbar;
+        color: white;
+        width: 100%;
+        margin-top: 31px;
+    }
+}
+
+
+#agregarCliente{
+    //margin-top: 25px;
+    //margin-bottom: 25px;
+    padding: 25px;
+    //text-align: center;
+    //justify-content: center;
+}
+#noCliente{
+
+    text-align: center;
+    justify-content: center;
+    border-bottom: solid $fondo_navbar;
+}
+
+/* Fin formulario crear cuentas */ 
+
+/* Inicio formulario Transacciones */
+#TransaccionesMismoBanco h1 {
+    color: $fondo_navbar;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#form-ingreso{
+    width: 600px;
+    height: min-content;
+    padding: 4px;
+    border: 2px solid white;
+    border-radius: 12px;
+    color: $fondo_navbar;
+    
+    #btn-ingresar{
+        background: $fondo_navbar;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: white;
+    }
+}
+
+#form-transaccion{
+    width: 600px;
+    height: min-content;
+    padding: 4px;
+    border: 2px solid white;
+    border-radius: 12px;
+    color: $fondo_navbar;
+    margin-top: 25px;
+    
+    #btn-continuar-transferencia{
+        background: $fondo_navbar;
+        width: 60%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: white;
+    }
+}
+
+/* Fin formulario Transacciones */ 

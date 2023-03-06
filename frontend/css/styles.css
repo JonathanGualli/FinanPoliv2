@@ -1,0 +1,243 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+  /* Inicio Barra de Menú */
+  /**/
+  
+  #cuerpo{
+    background-image: url('../resources/img/fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #cuerpo2{
+    background-image: url('../resources/img/fondoInvertido2.png');
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .navbar {
+    background-color: #38d39f !important;
+  }
+  .navbar-brand img{
+    height: 60px;
+    width: auto;
+  }
+  
+  .navbar .login-btn {
+    background-color: #12a4a4;
+    border-color: #12a4a4;
+    color: #fff;
+    margin-right: 15px;
+  }
+  
+  .navbar .login-btn:hover {
+    background-color: #fff;
+    border-color: #12a4a4;
+  }
+  
+  
+  .navbar .logout-btn {
+    background-color: #12a4a4;
+    border-color: #12a4a4;
+    color: #fff;
+    margin-right: 15px;
+  }
+  
+  .navbar .logout-btn:hover {
+    background-color: #fff;
+    border-color: #12a4a4;
+  }
+  
+  .nav-link{
+    color: #666;
+    background: none;
+    transition: all 300ms;
+    margin-right: 25px;
+  }
+  
+  .nav-link:hover{
+    background:white;
+    border-radius: 10px;
+    color: #1abc9c;
+    transition: all 600ms;
+  }
+  
+  .dropdown-item:hover{
+    background-color: #1abc9c;
+    transition: all 300ms;
+  }
+  
+  /* Fin Barra de Menú*/
+/* Inicio formulario de registro clientes */
+#RegistroClientes h1 {
+  color: #2a7c6e;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#form-clientes {
+  width: 600px;
+  height: min-content;
+  padding: 4px;
+  border: 2px solid green;
+  border-radius: 12px;
+  color: #555;
+}
+#form-clientes button {
+  width: 60%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#validacion {
+  width: 600px;
+  height: min-content;
+  padding: 4px;
+}
+
+/* Fin formulario de registro clientes */
+/* Inicio formulario crear cuentas */
+#CreacionCuentas h1 {
+  color: #2a7c6e;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#form-cuentas {
+  width: 600px;
+  height: min-content;
+  padding: 4px;
+  border: 2px solid green;
+  border-radius: 12px;
+  margin-top: 25px;
+}
+#form-cuentas #agregar-cuenta {
+  width: 60%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+#form-verificar-cliente {
+  width: 600px;
+  height: min-content;
+  padding: 4px;
+  border: 2px solid green;
+  border-radius: 12px;
+}
+
+#form-verificar-cliente #validar-cuenta {
+  color: white;
+  width: 100%;
+  margin-top: 31px;
+}
+
+#agregarCliente {
+  padding: 25px;
+}
+
+#noCliente {
+  text-align: center;
+  justify-content: center;
+}
+
+#aniadir-titular{
+  margin-top: 30px;
+}
+
+/* Fin formulario crear cuentas */
+/* Inicio formulario Transacciones */
+#TransaccionesMismoBanco h1 {
+  color: #2a7c6e;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#form-ingreso {
+  width: 600px;
+  height: min-content;
+  padding: 4px;
+  border: 2px solid white;
+  border-radius: 12px;
+  color: #2a7c6e;
+}
+#form-ingreso #btn-ingresar {
+  background: #2a7c6e;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+#form-transaccion {
+  width: 600px;
+  height: min-content;
+  padding: 4px;
+  border: 2px solid white;
+  border-radius: 12px;
+  color: #2a7c6e;
+  margin-top: 25px;
+}
+#form-transaccion #btn-continuar-transferencia {
+  background: #2a7c6e;
+  width: 60%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+/* Fin formulario Transacciones */
+
+/* Inicio Comprobacion */
+#identidad h1 {
+  color: #2a7c6e;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#formulario {
+  width: 600px;
+  height: min-content;
+  padding: 4px;
+  border: 2px solid green;
+  border-radius: 12px;
+  color: #555;
+}
+#formulario button {
+  width: 60%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+/* Fin Comprobacion */
+
+/* Inicio UsuarioClave*/
+#usuarioclave h1 {
+  color: #2a7c6e;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#form-usuario {
+  width: 600px;
+  height: min-content;
+  padding: 4px;
+  border: 2px solid green;
+  border-radius: 12px;
+  color: #555;
+}
+#form-usuario button {
+  width: 60%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+/* Fin UsuarioClave */
+/*# sourceMappingURL=styles.css.map */
